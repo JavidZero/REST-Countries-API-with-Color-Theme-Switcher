@@ -1,0 +1,465 @@
+:root {
+
+    /* Colors */
+
+    /* Neutral */
+    /* Dark Mode Elements */
+    --dark-mode-elements: hsl(209, 23%, 22%);
+    /* Dark Mode Background */
+    --dark-mode-bg: hsl(207, 26%, 17%);
+    /* Dark Mode Text */
+    --dark-mode-text: hsl(0, 0%, 100%);
+
+    /* Light Mode Elements */
+    --light-mode-elements: hsl(0, 0%, 100%);
+    /* Light Mode Background */
+    --light-mode-bg: hsl(0, 0%, 98%);
+    /* Light Mode Text */
+    --light-mode-text: hsl(200, 15%, 8%);
+    /* Light Mode Input */
+    --light-mode-input: hsl(0, 0%, 52%);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+button {
+    cursor: pointer;
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, .2);
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background-color: hsl(209, 23%, 24%);;
+}
+
+.container.light button:hover {
+    background-color: hsl(240, 40%, 100%);;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--dark-mode-bg);
+}
+
+.container.light {
+    background-color: var(--light-mode-bg);
+}
+
+.wrapper {
+    max-width: 134rem;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header */
+.header {
+    width: 100%;
+    height: 7rem;
+    background-color: var(--dark-mode-elements);
+
+    color: var(--dark-mode-text);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.light .header {
+    background-color: var(--light-mode-elements);
+    
+    color: var(--light-mode-text);
+
+}
+
+.header-mode {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-mode {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--dark-mode-text);
+
+    cursor: pointer;
+}
+
+.container.light .header-mode {
+    color: var(--light-mode-text);
+}
+
+.header-mode h4 {
+    font-size: 1.6rem;
+}
+
+.far {
+    display: none;
+}
+
+.container.light .far {
+    display: block;
+}
+
+.container.light .header .fas {
+    display: none;
+}
+
+
+
+/* Main */
+.main {
+    width: 100%;
+    min-height: calc(100vh - 7rem);
+    padding: 4rem 0 2rem 0;
+    box-shadow: inset 0 .3rem .6rem rgba(0, 0, 0, .2);
+
+}
+
+/* home Page*/
+.homePage {
+    font-size: 1.4rem;
+    padding: 4rem 0;
+}
+
+/* home Page header */
+.homePageheader {
+    width: 100%;
+    color: var(--dark-mode-text);
+}
+
+.container.light .homePageheader {
+    color: var(--light-mode-text);
+}
+
+
+/* home Page Search Box */
+.homePageSearchBox {
+    padding: 1rem;
+    background-color: var(--dark-mode-elements);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.container.light .homePageSearchBox {
+    background-color: var(--light-mode-elements);
+}
+
+.homePageSearchButton {
+    background-color: transparent;
+    border: none;
+    color: var(--dark-mode-text);
+}
+
+.container.light .homePageSearchButton {
+    color: var(--light-mode-text);
+}
+
+.homePageSearchButton:active,
+.homePageSearchButton:focus {
+    outline: none;
+}
+
+.homePageSearchInput {
+    padding: .3rem 1rem;
+    background-color: transparent;
+    border: none;
+    color: var(--dark-mode-text);
+}
+
+.container.light .homePageSearchInput {
+    color: var(--light-mode-input);
+}
+
+.homePageSearchInput:active,
+.homePageSearchInput:focus {
+    outline: none;
+}
+
+.homePageSearchInput::placeholder {
+    color: var(--dark-mode-text);
+}
+
+.container.light .homePageSearchInput::placeholder {
+    color: var(--light-mode-input);
+}
+
+
+.homePageFilter {
+    width: 16rem;
+    background-color: var(--dark-mode-elements);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    color: var(--dark-mode-text);
+}
+
+.container.light .homePageFilter {
+    background-color: var(--light-mode-elements);
+    color: var(--light-mode-text);
+}
+
+.homePageFilterSelect {
+    width: 16rem;
+    height: 100%;
+    padding:  1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: transparent;
+    color: var(--dark-mode-text);
+}
+
+.container.light .homePageFilterSelect {
+    color: var(--light-mode-text);
+}
+
+.homePageFilterSelect:focus,
+.homePageFilterSelect:active {
+    outline: none;
+}
+
+.homePageFilterSelect option {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: var(--dark-mode-elements);
+    border: none;
+}
+
+.container.light .homePageFilterSelect option {
+    background-color: var(--light-mode-elements);
+}
+
+.container.light .homePageFilter {
+    background-color: var(--light-mode-elements);
+}
+
+/* home Page Body */
+.homePageMain {
+    padding: 2rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 3.5rem;
+    grid-row-gap: 4rem;
+    justify-items: center;
+}
+
+.country-item {
+    max-width: 30rem;
+    min-width: 20rem;
+    height: 32rem;
+    background-color: var(--dark-mode-elements);
+    color: var(--dark-mode-text);
+
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+
+    cursor: pointer;
+}
+
+.country-image {
+    width: 100%;
+    height: 14.5rem;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.country-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.country-info {
+    padding: 3rem;
+}
+
+.country-info h4 {
+    font-size: 800;
+    margin-bottom: 1rem;
+}
+
+
+.country-info-name {
+    font-weight: 600;
+}
+
+.country-info-detail {
+    font-weight: 300;
+}
+
+.container.light .country-item {
+    background-color: var(--light-mode-elements);
+    color: var(--light-mode-text);
+}
+
+
+
+/* Details Page */
+.details-page {
+    font-size: 1.6rem;
+
+    width: 100%;
+    min-height: auto;
+    height: 100%;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.details-page-button-back {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--dark-mode-elements);
+    color: var(--dark-mode-text);
+    font-weight: 300;
+    margin-bottom: 5rem;
+}
+
+.container.light .details-page-button-back {
+    background-color: var(--light-mode-elements);
+    color: var(--light-mode-text);
+}
+
+.details-page-picture {
+    max-width: 56rem;
+    width: 45%;
+}
+
+.details-page-picture img {
+    width: 100%;
+}
+
+
+.details-page-info {
+    max-width: 58rem;
+    width: 50%;
+    color: var(--dark-mode-text);
+}
+
+.container.light .details-page-info {
+    color: var(--light-mode-text);
+}
+
+.details-page-info h1 {
+    margin-bottom: 2rem;
+}
+
+.details-page-info-insider .flex{
+    justify-content: flex-start;
+    gap: 5rem;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+}
+
+.details-page-info-name {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.details-page-info-detail {
+    font-weight: 300;
+}
+
+.details-page-border-box {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.details-page-border-box .details-page-info-name {
+    min-width: 13rem;
+}
+
+.details-page-border-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.details-page-border-item {
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    background-color: var(--dark-mode-elements);
+    color: var(--dark-mode-text);
+}
+
+.container.light .details-page-border-item {
+    background-color: var(--light-mode-elements);
+    color: var(--light-mode-text);
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+        min-height: auto;
+    }
+
+    .details-page .flex {
+        flex-direction: column;
+        gap: 5rem;
+        align-items: flex-start;
+    }
+
+    .details-page-picture {
+        max-width: 34.5rem;
+        width: 100%;
+    }
+
+    .details-page-info {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .homePageheader .flex {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+
+    .details-page-border-box {
+        flex-direction: column;
+
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Rest Countries API with color them switcher</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/5d47e7a5c3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    
+        <style>
+            .front-end {
+                max-width: 1440px;
+                width: 100%;
+                height: 34px;
+                margin: 0 auto;
+                background-color: black;
+                position: relative;
+            }
+        
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        
+            .attribution a,
+            .attribution span {
+                color: hsl(227, 45%, 77%);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- home -->
+            <header class="header">
+                <div class="wrapper">
+                    <div class="flex">
+                        <h3>Where in the world?</h3>
+                        
+                        <div class="header-mode">
+                            <div class="header-mode-pic">
+                                <i class="fas fa-moon"></i>
+                                <i class="far fa-moon"></i>
+                            </div>
+                            <h4>Dark Mode</h4>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main -->
+            <div class="main">
+                <div class="wrapper">
+                    <!-- home Page-->
+                    <div class="homePage">
+                        <!-- home Page header -->
+                        <div class="homePageheader">
+                            <div class="flex">
+                                <!-- home Page Search -->
+                                <div class="homePageSearchBox">
+                                    <button class="homePageSearchButton">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <input class="homePageSearchInput" type="text" placeholder="Search for country...">
+                                </div>
+                                <!-- home Page Filter -->
+                                <div class="homePageFilter">
+                                    <select class="homePageFilterSelect" name="" id="">
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- home Page Body -->
+                        <div class="homePageMain">
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="front-end">
+            <p class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <span>Javid Alizada</span>.
+            </p>
+        </footer>
+    </body>
+    <script src="app.js"></script>
+</html>
+
+
+<!--
+
+    
+-->
